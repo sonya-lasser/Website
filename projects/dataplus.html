@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+ 2026</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="../tooplate-minimal-white-style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav id="navbar">
+<div class="nav-container">
+<a href="../sonya-lasser.html" class="logo">SONYA LASSER</a>
+<ul class="nav-links">
+<li><a href="../sonya-lasser.html#about">ABOUT</a></li>
+<li><a href="../sonya-lasser.html#projects">PROJECTS</a></li>
+<li><a href="../sonya-lasser.html#blog">BLOG</a></li>
+<li><a href="../sonya-lasser.html#contact">CONTACT</a></li>
+</ul>
+</div>
+</nav>
+
+<!-- Content -->
+<section class="content" style="width:100%; max-width:800px; margin:auto; padding:80px 20px 60px;">
+
+<a href="../sonya-lasser.html#projects" class="back-link">
+← Back to Projects
+</a>
+
+<h1>Data+ : Pitching & Hitting WAR Creation</h1>
+<p style="color:#777; font-size:14px; margin-bottom: 20px;">May - July, 2026</p>
+
+<p>
+The Duke Baseball Analytics team was looking to create a metric called Pitcher WAR. 
+This metric is widely used throughout Major League Baseball to evaluate talent and use as evidence during contract negotiations. 
+WAR stands for Wins Above Replacement, which allows you to see what the value of each player is through a “win” total for all players. 
+At the college level, this becomes more challenging due to the differentiation in talent levels across Division 1, 2, and 3 baseball. 
+In order to create an accurate metric, you must assign weights to each player depending on the conference they play in. 
+For example, a Duke baseball pitcher who finished the season with a 3.50 ERA across 50 innings pitched would have a higher WAR than a Binghamton University pitcher who finished the season with the same stats, simply because of the talent level they are both going up against on a day-to-day basis. 
+The best way to do this is to separate the conferences into tiers. 
+This Pitcher WAR will be vital in our evaluation of not only our own players and potential lineup combinations, but also for the evaluation of players we are potentially bringing in through the transfer portal.
+</p>
+
+<p>
+We used data gathered by the NCAA from Trackman and TruMedia networks. There will be some data cleaning involved initially, followed by creating tiers for each of the conferences in Division 1 college baseball. Once we had the tiers, we calculated how each player did against each conference tier. Then, we calculated a “replacement rate”, which used the middle tier for conferences to decide who is “above replacement” in terms of WAR. This was all be done in R and used to create a Wins Above Replacement “WAR” metric for each pitcher and hitter in college baseball.
+</p>
+
+</section>
+
+<!-- Footer -->
+<footer style="padding:20px 0;">
+<p>© 2026 Sonya Lasser — Template by 
+<a href="https://www.tooplate.com" target="_blank" style="color:#000; font-weight:700;">Tooplate</a>
+</p>
+</footer>
+
+<script src="../tooplate-minimal-script.js"></script>
+
+</body>
+</html>
