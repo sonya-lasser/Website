@@ -1294,23 +1294,25 @@ https://www.tooplate.com/view/2141-minimal-white
                 display: none;
             }
         }
-        @media (max-width: 768px) {
+@media (max-width: 768px) {
   .about-layout {
     flex-direction: column;
     gap: 30px;
   }
 
   .about-image-wrapper {
-    width: 100%;
+    width: 75%;
+    max-width: 260px;
+    margin: 0 auto;
   }
 
   .about-image {
+    display: block;
     width: 100%;
-    height: auto;
+    height: 260px;
     min-height: 0;
-    aspect-ratio: 4 / 5;
     object-fit: cover;
-    object-position: 50% 35%;
+    object-position: center 35%;
   }
 
   .about-text {
