@@ -1559,3 +1559,200 @@ https://www.tooplate.com/view/2141-minimal-white
                 transition: none !important;
             }
         }
+
+
+    .project-label {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    .project-header h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      font-weight: 100;
+      line-height: 1;
+      letter-spacing: -3px;
+      margin-bottom: 30px;
+    }
+
+    .project-header h1::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 2px;
+      background: #000;
+      margin: 25px auto 0;
+    }
+
+    .project-subtitle {
+      max-width: 760px;
+      margin: 0 auto 30px;
+      font-size: 20px;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 30px;
+      font-size: 13px;
+      color: #666;
+      letter-spacing: 0.5px;
+    }
+
+    .project-section {
+      margin-bottom: 75px;
+    }
+
+    .project-section h2 {
+      font-size: 42px;
+      font-weight: 100;
+      letter-spacing: -1px;
+      margin-bottom: 25px;
+    }
+
+    .project-section h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .project-section p,
+    .project-section li {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    .project-section ul {
+      padding-left: 22px;
+    }
+
+    .project-section li {
+      margin-bottom: 14px;
+    }
+
+    .project-methodology {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+      margin-top: 35px;
+    }
+
+    .methodology-item {
+      border-top: 2px solid #000;
+      padding-top: 20px;
+    }
+
+    .results-section {
+      background: #000;
+      color: #fff;
+      padding: 50px;
+      margin-left: -50px;
+      margin-right: -50px;
+    }
+
+    .results-section h2 {
+      color: #fff;
+    }
+
+    .results-section p,
+    .results-section li {
+      color: #fff;
+    }
+
+    .impact-section {
+      border-top: 1px solid #000;
+      padding-top: 35px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .skill {
+      border: 1px solid #000;
+      padding: 9px 15px;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .project-visuals {
+      border-top: 1px solid #000;
+      padding-top: 35px;
+    }
+
+    .project-figure {
+      margin: 45px 0 65px;
+    }
+
+    .project-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #000;
+    }
+
+    .project-figure figcaption {
+      max-width: 850px;
+      margin-top: 14px;
+      color: #666;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .project-figure figcaption strong {
+      color: #000;
+      font-weight: 500;
+    }
+
+    .poster-link {
+      text-align: left;
+      margin-top: 25px;
+      margin-bottom: 75px;
+    }
+
+    .poster-link .service-tag {
+      display: inline-block;
+    }
+
+    @media (max-width: 768px) {
+      .project-page {
+        padding-top: 90px;
+      }
+
+      .project-header {
+        margin-bottom: 55px;
+      }
+
+      .project-header h1 {
+        letter-spacing: -2px;
+      }
+
+      .project-subtitle {
+        font-size: 17px;
+      }
+
+      .project-section h2 {
+        font-size: 36px;
+      }
+
+      .project-methodology {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .results-section {
+        padding: 35px 25px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
