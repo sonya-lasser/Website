@@ -33,42 +33,49 @@
 
 <!-- About Me -->
 <section id="about" class="about">
-  <div class="container">
+<div class="container">
 
-    <div class="about-content">
-      <h2>About Me</h2>
+<div style="max-width:760px; margin:auto;">
+<h2 style="text-align:center;">About Me</h2>
+<div style="width:30px; height:2px; background:#000; margin:15px auto 30px;"></div>
 
-      <div class="about-line"></div>
+<div style="display:flex; align-items:stretch; gap:40px;">
 
-      <div class="about-layout">
+<div style="display:flex; align-items:stretch; gap:40px;">
 
-        <!-- Image -->
-        <div class="about-image-wrapper">
-          <img
-            src="images/profile_picture.jpg"
-            alt="Portrait of Sonya Lasser"
-            class="about-image"
-          >
-        </div>
+<!-- Image (smaller) -->
+<div style="flex:0.8;">
+<div style="
+width:100%;
+height:100%;
+min-height:240px;
+overflow:hidden;
+">
+<img src="images/profile_picture.jpg" 
+style="
+width:100%;
+height:100%;
+object-fit:cover;
+object-position:50% 40%;
+">
+</div>
+</div>
 
-        <!-- Text -->
-        <div class="about-text">
-          <p>
-            Hi! I am a rising junior at Duke University studying statistical sciences and cinematic arts.
-            I enjoy applying analytics to complex ideas in order to simplify problems, while also
-            communicating results visually and clearly so that they can be understood by a wide audience.
-          </p>
+<!-- Text (wider) -->
+<div style="flex:1.2; display:flex; flex-direction:column; justify-content:center;">
+<p style="font-size:16.5px; line-height:1.6;">
+Hi! I am a rising junior at Duke University studying statistical sciences and cinematic arts. 
+I enjoy applying analytics to complex ideas in order to simplify problems, while also 
+communicating results visually and clearly so that they can be understood by a wide audience. 
+</p>
 
-          <p>
-            I have strong experience in R, Microsoft Office Suite, and Adobe Creative Suite.
-            I have worked in Python, and I am currently learning SQL.
-          </p>
-        </div>
+<p style="margin-top:15px; color:#555;">
+I have strong experience in R, Microsoft Office Suite, and Adobe Creative Suite. I have worked in Python,
+and I am currently learning SQL.
+</p>
+</div>
 
-      </div>
-    </div>
-
-  </div>
+</div>
 </section>
 
 <!-- Projects -->
