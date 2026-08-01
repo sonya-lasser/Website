@@ -1,62 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Data+ 2026</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="../tooplate-minimal-white-style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Baseball Pitching &amp; Hitter WAR | Sonya Lasser</title>
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="../tooplate-minimal-white-style.css" rel="stylesheet">
+
+  <!-- Project-page-specific styling -->
+  <style>
+    .project-page {
+      padding: 110px 20px 80px;
+      background: #fff;
+    }
+
+    .project-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .project-header {
+      max-width: 900px;
+      margin: 30px auto 70px;
+      text-align: center;
+    }
+
+    .project-label {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    .project-header h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      font-weight: 100;
+      line-height: 1;
+      letter-spacing: -3px;
+      margin-bottom: 30px;
+    }
+
+    .project-header h1::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 2px;
+      background: #000;
+      margin: 25px auto 0;
+    }
+
+    .project-subtitle {
+      max-width: 760px;
+      margin: 0 auto 30px;
+      font-size: 20px;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 30px;
+      font-size: 13px;
+      color: #666;
+      letter-spacing: 0.5px;
+    }
+
+    .project-section {
+      margin-bottom: 75px;
+    }
+
+    .project-section h2 {
+      font-size: 42px;
+      font-weight: 100;
+      letter-spacing: -1px;
+      margin-bottom: 25px;
+    }
+
+    .project-section h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .project-section p,
+    .project-section li {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    .project-section ul {
+      padding-left: 22px;
+    }
+
+    .project-section li {
+      margin-bottom: 14px;
+    }
+
+    .project-methodology {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+      margin-top: 35px;
+    }
+
+    .methodology-item {
+      border-top: 2px solid #000;
+      padding-top: 20px;
+    }
+
+    .results-section {
+      background: #000;
+      color: #fff;
+      padding: 50px;
+      margin-left: -50px;
+      margin-right: -50px;
+    }
+
+    .results-section h2 {
+      color: #fff;
+    }
+
+    .results-section p,
+    .results-section li {
+      color: #fff;
+    }
+
+    .impact-section {
+      border-top: 1px solid #000;
+      padding-top: 35px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .skill {
+      border: 1px solid #000;
+      padding: 9px 15px;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 768px) {
+      .project-page {
+        padding-top: 90px;
+      }
+
+      .project-header {
+        margin-bottom: 55px;
+      }
+
+      .project-header h1 {
+        letter-spacing: -2px;
+      }
+
+      .project-subtitle {
+        font-size: 17px;
+      }
+
+      .project-section h2 {
+        font-size: 36px;
+      }
+
+      .project-methodology {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .results-section {
+        padding: 35px 25px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    .project-visuals {
+  border-top: 1px solid #000;
+  padding-top: 35px;
+}
+
+.project-figure {
+  margin: 45px 0 65px;
+}
+
+.project-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.project-figure figcaption {
+  max-width: 850px;
+  margin-top: 14px;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.project-figure figcaption strong {
+  color: #000;
+  font-weight: 500;
+}
+  </style>
 </head>
+
 <body>
 
-<!-- Navigation -->
-<nav id="navbar">
-<div class="nav-container">
-<a href="../index.html" class="logo">SONYA LASSER</a>
-<ul class="nav-links">
-<li><a href="../index.html#about">ABOUT</a></li>
-<li><a href="../index.html#projects">PROJECTS</a></li>
-<li><a href="../index.html#blog">BLOG</a></li>
-<li><a href="../index.html#contact">CONTACT</a></li>
-</ul>
-</div>
-</nav>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="logo">SONYA LASSER</a>
 
-<!-- Content -->
-<section class="content" style="width:100%; max-width:800px; margin:auto; padding:80px 20px 60px;">
+      <div class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-<a href="../index.html#projects" class="back-link">
-← Back to Projects
-</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#about">ABOUT</a></li>
+        <li><a href="../index.html#projects">PROJECTS</a></li>
+        <li><a href="../index.html#blog">BLOG</a></li>
+        <li><a href="../index.html#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<h1>Data+ : Pitching & Hitting WAR Creation</h1>
-<p style="color:#777; font-size:14px; margin-bottom: 20px;">May - July, 2026</p>
+  <!-- Project Content -->
+  <main class="project-page">
+    <div class="project-container">
 
-<p>
-The Duke Baseball Analytics team was looking to create a metric called Pitcher WAR. 
-This metric is widely used throughout Major League Baseball to evaluate talent and use as evidence during contract negotiations. 
-WAR stands for Wins Above Replacement, which allows you to see what the value of each player is through a “win” total for all players. 
-At the college level, this becomes more challenging due to the differentiation in talent levels across Division 1, 2, and 3 baseball. 
-In order to create an accurate metric, you must assign weights to each player depending on the conference they play in. 
-For example, a Duke baseball pitcher who finished the season with a 3.50 ERA across 50 innings pitched would have a higher WAR than a Binghamton University pitcher who finished the season with the same stats, simply because of the talent level they are both going up against on a day-to-day basis. 
-The best way to do this is to separate the conferences into tiers. 
-This Pitcher WAR will be vital in our evaluation of not only our own players and potential lineup combinations, but also for the evaluation of players we are potentially bringing in through the transfer portal.
-</p>
+      <a href="../index.html#projects" class="back-link">
+        ← Back to Projects
+      </a>
 
-<p>
-We used data gathered by the NCAA from Trackman and TruMedia networks. There will be some data cleaning involved initially, followed by creating tiers for each of the conferences in Division 1 college baseball. Once we had the tiers, we calculated how each player did against each conference tier. Then, we calculated a “replacement rate”, which used the middle tier for conferences to decide who is “above replacement” in terms of WAR. This was all be done in R and used to create a Wins Above Replacement “WAR” metric for each pitcher and hitter in college baseball.
-</p>
+      <header class="project-header">
+        <div class="project-label">Data+ 2026 · Sports Analytics</div>
 
+        <h1>Baseball Pitching &amp; Hitter WAR</h1>
+
+        <p class="project-subtitle">
+          Developing a transparent, conference-adjusted WAR framework for evaluating NCAA Division I baseball players and identifying potential transfer portal targets.
+        </p>
+
+        <div class="project-meta">
+          <span><strong>Timeline:</strong> May–July 2026</span>
+          <span><strong>Collaborators:</strong> Aahan Mehta, Ewa Adebayo-Oke, Sonya Lasser</span>
+          <span><strong>Data:</strong> TruMedia and TrackMan</span>
+        </div>
+      </header>
+
+      <section class="project-section">
+        <h2>Overview</h2>
+
+        <p>
+          Wins Above Replacement (WAR) is widely used to evaluate player value in professional baseball, but applying it directly to NCAA baseball can produce misleading comparisons. Differences in competition level across Division I conferences make it difficult to compare players using a single, unadjusted metric.
+        </p>
+
+        <p>
+          This project developed a transparent, conference-adjusted WAR framework for evaluating NCAA pitchers and hitters. The tool is designed to support player assessment, scouting, performance analysis, and the identification of potential transfer portal targets.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Methodology</h2>
+
+        <div class="project-methodology">
+
+          <article class="methodology-item">
+             <h3>Conference-adjusted pitching WAR</h3>
+
+            <p>
+                We used Fielding Independent Pitching (FIP), a standard pitching metric based exclusively on outcomes most directly controlled by the pitcher: strikeouts, walks, hit-by-pitches, and home runs allowed. FIP was incorporated into a conference-adjusted framework to account for differences in competition level across NCAA Division I conferences, and the resulting adjusted measure was converted into Runs Above Replacement and ultimately pitching WAR. This allowed pitchers from different conferences to be evaluated on a more comparable scale.
+            </p>
+            </article>
+
+          <article class="methodology-item">
+            <h3>Conference-adjusted hitting WAR</h3>
+
+            <p>
+              For hitters, we used weighted On-Base Average (wOBA) as the foundation of the model. The calculation incorporated conference adjustments and plate appearances to estimate a player's offensive contribution relative to a replacement-level hitter.
+            </p>
+          </article>
+
+          <article class="methodology-item">
+            <h3>Conference adjustments</h3>
+
+            <p>
+              We created conference tiers to account for differences in competition across Division I baseball. These adjustments provided a more equitable basis for comparing player performance across different schedules.
+            </p>
+          </article>
+
+          <article class="methodology-item">
+            <h3>Team-level analysis</h3>
+
+            <p>
+              We aggregated player WAR to compare team performance and examined the relationship between team WAR, tournament advancement, and outcomes in the 2026 NCAA Baseball Tournament.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+        <section class="project-section project-visuals">
+  <h2>Visualizing the Model</h2>
+
+  <figure class="project-figure">
+    <img
+      src="../files/DataPlus/hitting-war-construction.png"
+      alt="Line charts comparing the accumulated WAR of a power hitter and a contact hitter with similar WAR totals"
+      loading="lazy"
+    >
+
+    <figcaption>
+      <strong>Constructing Hitting WAR:</strong>
+      Comparing the accumulated value of a power hitter and a contact hitter with similar WAR totals.
+    </figcaption>
+  </figure>
+
+  <figure class="project-figure">
+    <img
+      src="../files/DataPlus/team-war-tournament-outcomes.png"
+      alt="Scatterplot showing the relationship between team WAR and tournament outcomes in the 2026 NCAA Baseball Tournament"
+      loading="lazy"
+    >
+
+    <figcaption>
+      <strong>Team WAR and Tournament Outcomes:</strong>
+      Team WAR was generally associated with stronger tournament performance, although it was not sufficient to predict advancement on its own.
+    </figcaption>
+  </figure>
 </section>
+      
+      <section class="project-section results-section">
+        <h2>Key Results</h2>
 
-<!-- Footer -->
-<footer style="padding:20px 0;">
-<p>© 2026 Sonya Lasser — Template by 
-<a href="https://www.tooplate.com" target="_blank" style="color:#000; font-weight:700;">Tooplate</a>
+        <ul>
+          <li>
+            The pitching model identified several high-performing players who were selected early in the 2026 MLB Draft, including Jack Radel, selected in the first round, and Mason Edwards and Wes Mendes, selected in the second round.
+          </li>
+
+          <li>
+            Among the hitters, Chris Katz, Vahn Lackey, and Daniel Jackson ranked highly in the model and were selected in the 2026 MLB Draft.
+          </li>
+
+          <li>
+            The framework allowed pitchers and hitters with different styles—such as power-oriented and contact-oriented hitters—to be compared using a common value metric.
+          </li>
+
+          <li>
+            The model provides a data-driven way to compare players across conferences and can help identify promising transfer portal candidates whose performance may be undervalued or difficult to assess using traditional statistics alone.
+          </li>
+
+          <li>
+            At the team level, WAR showed a generally positive relationship with tournament performance, but it was not a reliable standalone predictor of advancement.
+          </li>
+
+          <li>
+            These results suggest that WAR is valuable for evaluating individual and team performance, but should be interpreted alongside roster construction, coaching, defense, and tournament variance.
+          </li>
+        </ul>
+      </section>
+
+      <section class="project-section impact-section">
+        <h2>Impact</h2>
+
+        <p>
+          This project demonstrates how a transparent, context-aware WAR model can improve player comparisons in college baseball. By adjusting for conference strength and using player-performance measures such as FIP and wOBA, the framework provides a more useful foundation for evaluating current players, projecting value across levels of competition, and identifying potential transfer portal targets.
+        </p>
+
+        <p>
+          The work also highlights an important limitation of analytics: a strong descriptive metric does not automatically become a perfect predictive model. WAR can help explain player and team value, but effective recruiting and roster decisions require combining it with additional performance, scouting, and contextual information.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Skills Demonstrated</h2>
+
+        <div class="skills-list">
+          <span class="skill">Sports Analytics</span>
+          <span class="skill">Statistical Modeling</span>
+          <span class="skill">Baseball Sabermetrics</span>
+          <span class="skill">Data Visualization</span>
+          <span class="skill">Player Evaluation</span>
+          <span class="skill">Transfer Portal Analysis</span>
+          <span class="skill">NCAA Analysis</span>
+          <span class="skill">R</span>
+        </div>
+      </section>
+
+    </div>
+
+    <p>
+  <a
+    href="../files/DataPlus/baseball-war-poster.pdf"
+    class="service-tag"
+    target="_blank"
+  >
+    View Full Poster
+  </a>
 </p>
-</footer>
 
-<script src="../tooplate-minimal-script.js"></script>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2026 Sonya Lasser — Template by
+      <a href="https://www.tooplate.com"
+         target="_blank"
+         style="color:#000; font-weight:700;">
+        Tooplate
+      </a>
+    </p>
+  </footer>
+
+  <script src="../tooplate-minimal-script.js"></script>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+    }
+  </script>
 
 </body>
 </html>
